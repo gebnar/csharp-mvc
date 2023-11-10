@@ -15,6 +15,12 @@ namespace TestApp1 {
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+
+            // ------------------------- this is the bit I added...
+            routes.MapRoute(
+                 name: "Hello",
+                 url: "{controller}/{action}/{name}/{id}"
+             );
         }
     }
 }
